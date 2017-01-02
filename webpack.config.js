@@ -10,10 +10,10 @@ module.exports = {
     hot: true,
     inline: true,
     progress: true,
-    contentBase: 'A',
+    contentBase: '/app',
     // devtool: "source-map", 
     color: true,
-    port: 8080
+    port: 1109
   },
   devtool: "cheap-source-map",
   entry: [
@@ -65,6 +65,6 @@ module.exports = {
       new ExtractTextPlugin("[name].css"),
     
     new webpack.HotModuleReplacementPlugin(),
-    new OpenBrowserPlugin({ url: 'http://localhost:8080' })
+    new OpenBrowserPlugin({ url: 'http://localhost:1109' })
   ]
 };
